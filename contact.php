@@ -27,16 +27,18 @@
 
 		if ($result == true and $result2 == true) {
 			# code...
-			// If the login credentials doesn't match, he will be shown with an error message.
-			$_SESSION['contacting'] = "Message successfully sent. Thank you ".$name." !!! We'll contact you shortly";
-			//echo "Invalid Login Credentials.";
-			header('Location: index.html');
+			// Display the alert box  
+			echo '<script>
+					alert("Message successfully sent, Thank you '.$name.'");
+					window.location = "index.html";
+				</script>';
 		}
 	}
 	else{
-		//If the login credentials doesn't match, he will be shown with an error message.
-		$_SESSION['contacting'] = "Incorrect or invalid Input(s), Please try again with valid details.";
-		//echo "Invalid Login Credentials.";
-		header('Location: index.html');
+		// Display the alert box
+		echo '<script>
+				alert("Message not sent, Please try again '.$_POST['name'].'");
+				window.location = "index.html";
+			</script>';
 	}
 ?>
