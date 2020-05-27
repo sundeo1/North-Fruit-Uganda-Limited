@@ -29,7 +29,7 @@
 			# code...
 			// Display the alert box  
 			echo '<script>
-					alert("Message successfully sent, Thank you '.$name.'");
+					alert("Message successfully sent, Thank you '.$name.' !!! We\'ll contact you shortly");
 					window.location = "index.html";
 				</script>';
 		}
