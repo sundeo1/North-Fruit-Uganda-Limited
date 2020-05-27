@@ -25,7 +25,6 @@
 }*/
 
 .icon-bar {
-	width:10%;
 	display:inline;
 }
 
@@ -49,6 +48,12 @@
   color: white;
 }
 
+
+.viber {
+  background: #3B5998;
+  color: white;
+}
+
 .twitter {
   background: #55ACEE;
   color: white;
@@ -65,9 +70,9 @@
   color: white;
 }
   body {
-    font: 400 15px Lato, sans-serif;
+    font: 300 20px Lato, sans-serif;
     line-height: 1.8;
-    color: #818181;
+    color: #2f4f4f;;
   }
   h2 {
     font-size: 24px;
@@ -85,9 +90,12 @@
   }
   .jumbotron {
     background-color: #006400;
-    color: #fff;
+    /*color: #fff;*/
+	color: #f0ffff;
     padding: 100px 25px;
     font-family: Montserrat, sans-serif;
+	text-align: justify;
+	font-size: 15px;
   }
   .container-fluid {
     padding: 60px 50px;
@@ -182,14 +190,18 @@
 	background-color: #ffffff;
     z-index: 9999;
     border: 0;
-    font-size: 12px !important;
+    font-size: 15px !important;
+	font-weight: bold;
     line-height: 1.42857143 !important;
     letter-spacing: 4px;
     border-radius: 0;
     font-family: Montserrat, sans-serif;
+	height: 80px;
+	
   }
   .navbar li a, .navbar .navbar-brand {
     color: #006400 !important;
+	margin-top: 5px;
   }
   .navbar-nav li a:hover, .navbar-nav li.active a {
     color: #f4511e !important;
@@ -249,6 +261,16 @@
 	.jumbotron img {
 		display:none;
 	}
+	
+	.container-fluid {
+    padding: 10px 10px;
+	}
+	
+	body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #2f4f4f;
+	}
   }
 	
   @media screen and (max-width: 480px) {
@@ -263,6 +285,11 @@
 	.jumbotron img {
 		display:none;
 	}
+	
+	.container-fluid {
+    padding: 10px 10px;
+  }
+	
   }
   </style>
 </head>
@@ -276,7 +303,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#myPage"><img src="images/logo.PNG" alt="logo" width = "35" height = "35" ></a>
+      <a class="navbar-brand" href="#myPage"><img src="images/logo.PNG" alt="logo" width = "60" height = "60" ></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -308,19 +335,19 @@
 				<div class="col-sm-4">
 					<div class="thumbnail" >
 						<img src="images/green_chilli.jpg" alt="green chilli">
-						<p><strong>Green Chilli</strong></p>
+						<p><strong>Green Chilli (Capsicum annuum)</strong></p>
 					</div>
 				</div>
 				<div class="col-sm-4">
 					<div class="thumbnail" >
 						<img src="images/african_birds_eye_chilli3.jpg" alt="African Birds Eye Chilli" label = "African Birds Eye Chilli">
-						<p><strong>African Birds Eye Chilli</strong></p>
+						<p><strong>African Birds Eye Chilli (Capsicum Frutescens)</strong></p>
 					</div>
 				</div>
 				<div class="col-sm-4">
 					<div class="thumbnail" >
 						<img src="images/okra.jpg" alt="Okra">
-						<p><strong>Okra</strong></p>
+						<p><strong>Okra (Abelmoschus esculentus)</strong></p>
 					</div>
 				</div>
 			</div>
@@ -330,19 +357,19 @@
 				<div class="col-sm-4">
 					<div class="thumbnail" >
 						<img src="images/garden_eggs3.jpg" alt="Garden Eggs" >
-						<p><strong>Garden Eggs</strong></p>
+						<p><strong>Garden Eggs (Solanum Melongena)</strong></p>
 					</div>
 				</div>
 				<div class="col-sm-4">
 					<div class="thumbnail">
 						<img src="images/pineapple.jpg" alt="Pineapple" >
-						<p><strong>Pineapple</strong></p>
+						<p><strong>Pineapple (Ananas Comosus)</strong></p>
 					</div>
 				</div>
 				<div class="col-sm-4">
 					<div class="thumbnail">
 						<img src="images/avocado3.jpg" alt="Avocado" >
-						<p><strong>Avocado</strong></p>
+						<p><strong>Avocado (Persea Americana)</strong></p>
 					</div>
 				</div>
 			</div>
@@ -352,19 +379,19 @@
 				<div class="col-sm-4">
 					<div class="thumbnail">
 						<img src="images/cassava.jpg" alt="Cassava" >
-						<p><strong>Cassava</strong></p>
+						<p><strong>Cassava (Manihot esculenta)</strong></p>
 					</div>
 				</div>
 				<div class="col-sm-4">
 					<div class="thumbnail">
 						<img src="images/ginger.jpg" alt="Ginger" >
-						<p><strong>Ginger</strong></p>
+						<p><strong>Ginger (Zingiber Officinale)</strong></p>
 					</div>
 				</div>
 				<div class="col-sm-4">
 					<div class="thumbnail">
 						<img src="images/passion.jpg" alt="Passion Fruits" >
-						<p><strong>Passion Fruits</strong></p>
+						<p><strong>Passion Fruits (Passiflora Edulis)</strong></p>
 					</div>
 				</div>
 			</div>
@@ -404,7 +431,7 @@
 </div>
 
 <!-- Container (Services Section) -->
-<div id="services" class="container-fluid text-center">
+<div id="services" class="container-fluid bg-grey text-center">
   <h2>PRODUCTS</h2>
   <h4>What we offer</h4>
   <br>
@@ -477,7 +504,7 @@
 
 <!-- Container (Portfolio Section) -->
 <div id="portfolio" class="container-fluid  bg-grey">
-  <h2>Quality Control</h2><br>
+  <h2 class = "text-center">Quality Control</h2><br>
   <h4>We have an agronomist who ensures that proper practices at our farmer’s farms are followed for example</h4>
   <ul>
 	<li>Proper farming records are kept</li>
@@ -487,7 +514,7 @@
 	<li>Inspection records for pests and diseases</li>
   </ul><br>
 
-  <h2>Quality Controller</h2>
+  <h2 class = "text-center">Quality Controller</h2>
   <h4>Our quality controller at the pack house ensures the following</h4>
   <ul>
 	<li>Health safety regulations are followed</li>
@@ -501,14 +528,14 @@
 </div>
 
 <!-- Container (Pricing Section) -->
-<div id="pricing" class="container-fluid">
+<div id="pricing" class="container-fluid bg-grey">
   <div class="text-center">
     <h2>Pricing</h2>
-    <h4>We offer affordable prices according to world market prices</h4>
+    <p>We offer affordable prices according to world market prices</p>
   </div><br>
   <div class="text-center">
     <h2>Why Choose Us??</h2>
-    <h4>We are efficient, effective in delivery and know our market well. We have the right farmers who follow best farming practices and we know our products well.</h4>
+    <p>We are efficient, effective in delivery and know our market well. We have the right farmers who follow best farming practices and we know our products well.</p>
   </div>
   
 </div>
@@ -536,6 +563,7 @@
 		<a href="https://twitter.com/FruitsNorth" class="twitter" target = "_blank"><i class="fa fa-twitter"></i></a>
 		<a href="https://www.linkedin.com/company/northfruitsuganda/" class="linkedin" target = "_blank"><i class="fa fa-linkedin" ></i></a>
 		<a href="https://www.instagram.com/northfruitsuganda/" class="instagram" target = "_blank"><i class="fa fa-instagram" ></i></a>
+		<!--<a href="https://www.instagram.com/northfruitsuganda/" class="viber" target = "_blank"><i class="fa fa-viber" ></i></a>-->
 	 </div>
     </div> <br>
 	 
@@ -575,7 +603,7 @@
   </a>
    <div class="row">
           <div class="col-md-12 text-center">
-			<p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Designed and Built By <a href="http://sundaydeo.000webhostapp.com/" title="Visit Developer's page" target = "_blank" style = "color:blue">Sunday Deogratias</a> and <a href="https://github.com/muwongeemmanuel/" title="Visit Developer's page" target = "_blank" style = "color:blue">Muwonge Emmanuel</a>, facilitated by <a href="https://ancywax.com/" target = "_blank" style = "color:blue">Ancywax, Uganda</a></p>
+			<p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Designed By <a href="https://ancywax.com/" target = "_blank" style = "color:blue">Ancywax, Uganda</a></p>
           </div>
    </div>
   
