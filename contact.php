@@ -1,5 +1,5 @@
 <?php	
-	if (isset($_POST['name']) and isset($_POST['email']) and isset($_POST['contact'])and isset($_POST['comments'])) {
+	if (isset($_POST['name']) and isset($_POST['email']) and isset($_POST['comments'])) {
 		
 		
 		$name = $_POST['name'];
